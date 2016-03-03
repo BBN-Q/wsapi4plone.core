@@ -1,4 +1,4 @@
-from zope.app.container.interfaces import IContainer
+from zope.container.interfaces import IContainer
 from zope.component import (adapts, getMultiAdapter, getUtilitiesFor,
     queryMultiAdapter)
 from zope.interface import implements, implementsOnly, Interface

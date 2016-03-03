@@ -4,7 +4,7 @@ import unittest
 from zope.interface import implements, Interface
 from zope.interface.verify import verifyObject
 from zope.component import getMultiAdapter, getSiteManager
-from zope.app.container.interfaces import IContainer
+from zope.container.interfaces import IContainer
 
 from wsapi4plone.core.tests.test_00_service import ServiceTestCase
 from wsapi4plone.core.interfaces import (

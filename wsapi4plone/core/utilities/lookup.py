@@ -1,4 +1,4 @@
-from zope.app.container.interfaces import IContainer
+from zope.container.interfaces import IContainer
 from zope.component import getUtility
 from zope.interface import implements
 
@@ -59,7 +59,7 @@ class ServiceLookup(object):
         >>> import wsapi4plone.core as wsapi4plone
         >>> ztapi.provideUtility(wsapi4plone.IContextBuilder, builder)
         >>> ztapi.provideAdapter(Interface, wsapi4plone.IService, wsapi4plone.Service)
-        >>> from zope.app.container.interfaces import IContainer
+        >>> from zope.container.interfaces import IContainer
         >>> ztapi.provideAdapter(IContainer, wsapi4plone.IServiceContainer, wsapi4plone.ServiceContainer)
 
     Finally, try the ServiceLookup.

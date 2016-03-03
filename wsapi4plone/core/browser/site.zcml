@@ -1,11 +1,11 @@
-<configure 
+<configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="wsapi4plone">
 
     <!-- Application calls -->
     <browser:pages
-        for="zope.app.component.interfaces.ISite"
+        for="zope.location.interfaces.ISite"
         class=".app.ApplicationAPI"
         layer=".interfaces.IAPILayer"
         permission="zope2.View"
@@ -21,7 +21,7 @@
     </browser:pages>
 
     <browser:page
-        for="zope.app.component.interfaces.ISite"
+        for="zope.location.interfaces.ISite"
         name="get_types"
         class=".types.Types"
         attribute="get_types"
@@ -30,7 +30,7 @@
         />
 
     <browser:page
-        for="zope.app.component.interfaces.ISite"
+        for="zope.location.interfaces.ISite"
         name="query"
         class=".query.Query"
         attribute="query"
@@ -40,7 +40,7 @@
 
     <!-- Application calls (authenticated) -->
     <browser:pages
-        for="zope.app.component.interfaces.ISite"
+        for="zope.location.interfaces.ISite"
         class=".app.ApplicationAPI"
         layer=".interfaces.IAPILayer"
         permission="wsapi.authenticated"
@@ -60,7 +60,7 @@
     </browser:pages>
 
     <browser:pages
-        for="zope.app.component.interfaces.ISite"
+        for="zope.location.interfaces.ISite"
         class=".workflow.Workflow"
         layer=".interfaces.IAPILayer"
         permission="wsapi.authenticated"
@@ -76,7 +76,7 @@
     </browser:pages>
 
     <browser:pages
-        for="zope.app.component.interfaces.ISite"
+        for="zope.location.interfaces.ISite"
         class=".discussion.Discussion"
         layer=".interfaces.IAPILayer"
         permission="wsapi.authenticated"

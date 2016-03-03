@@ -5,7 +5,7 @@ import xmlrpclib
 
 from zope.component import getMultiAdapter, getSiteManager
 from zope.interface import Interface
-from zope.app.container.interfaces import IContainer
+from zope.container.interfaces import IContainer
 from DateTime import DateTime
 
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot

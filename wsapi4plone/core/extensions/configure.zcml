@@ -1,4 +1,4 @@
-<configure 
+<configure
     xmlns="http://namespaces.zope.org/zope"
     i18n_domain="wsapi4plone">
 
@@ -12,13 +12,13 @@
     <adapter
       name="contents"
       for="wsapi4plone.core.interfaces.IServiceContainer
-           zope.app.container.interfaces.IContainer"
+           zope.container.interfaces.IContainer"
       provides=".plone.IPloneContents"
       factory=".plone.PloneContents"
       />
 
     <adapter
-      for="zope.app.container.interfaces.IContainer"
+      for="zope.container.interfaces.IContainer"
       provides=".plone.IContentsQuery"
       factory=".plone.PloneFolderContents"
       />

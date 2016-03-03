@@ -4,7 +4,7 @@ import unittest
 
 from zope.component import getSiteManager
 from zope.interface import implements, Interface
-from zope.app.container.interfaces import IContainer
+from zope.container.interfaces import IContainer
 
 
 class Dummy(object):

@@ -1,5 +1,5 @@
 from cgi import escape
-from zope.app.component.hooks import getSite
+from zope.component.hooks import getSite
 from zope.interface import implements
 
 from Products.CMFPlone.utils import safe_unicode
